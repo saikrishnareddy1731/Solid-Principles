@@ -1,0 +1,36 @@
+Index: src/main/java/com/solid/principles/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/solid/principles/Main.java b/src/main/java/com/solid/principles/Main.java
+--- a/src/main/java/com/solid/principles/Main.java
++++ b/src/main/java/com/solid/principles/Main.java	(date 1756444305405)
+@@ -1,6 +1,7 @@
+ package com.solid.principles;
+ 
+-import com.solid.principles.dependencyinversion.good.CalculatorOperation;
++import com.solid.principles.dependencyinversion.good.AddOperations;
++import com.solid.principles.dependencyinversion.good.Calculators;
+ import com.solid.principles.interfacesegregation.good.DBDaoConnection;
+ import com.solid.principles.interfacesegregation.good.FileDaoConnection;
+ import com.solid.principles.liskov.good.*;
+@@ -74,14 +75,9 @@
+ 
+ 
+         System.out.println("###################Dependency inversion principles#############################");
+-        CalculatorOperation calOp = new CalculatorOperation() {
+-            @Override
+-            public int calculate(int a, int b) {
+-                return 0;
+-            }
+-        };
+-        int result = calOp.calculate(5, 3, new AddOperation());
+-        System.out.println("Calculation of 2 numbers : "+result);
++        Calculators cal = new Calculators();
++        int res = cal.calculate(5, 3, new AddOperations());
++        System.out.println("Calculations of 2 numbers : "+res);
+ 
+     }
+ }
+\ No newline at end of file
