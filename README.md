@@ -89,4 +89,3 @@ Both should depend on abstractions.
 // ################### Dependency Inversion Principle #####################
 // Calculation of 2 numbers: 8
 
-
