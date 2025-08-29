@@ -59,25 +59,33 @@ Both should depend on abstractions.
 - Encourages reuse and extensibility
 
 
-###################CODE OUT PUT########################################
-###################Solid principles####################################
-###################Single responsibility principles####################
-Account Added Successfully
-Get Account :Vishrut , 123 , 100000
-Deposited Successfully
-###################Open close principles################################
-Calculation of 2 numbers : 8
-###################Liskov Substitution principles#######################
-Credit Card Loan: Paid amount 5000
-Home Loan: Paid amount 20000
-Home Loan: Foreclosure done successfully
-###################Interface Segregation principles#####################
-DB: Opening database connection
-DB: Creating record in database
-DB: Deleting record from database
--------------------
-File: Opening file
-File: Creating record in file
-File: Deleting record from file
-###################Dependency inversion principles########################
-Calculations of 2 numbers : 8
+// ################### CODE OUTPUT ########################################
+// ################### Solid Principles ###################################
+
+// ################### Single Responsibility Principle ####################
+// Account Added Successfully
+// Get Account : Vishrut, 123, 100000
+// Deposited Successfully
+
+// ################### Open/Closed Principle ##############################
+// Calculation of 2 numbers: 8
+
+// ################### Liskov Substitution Principle ######################
+// Credit Card Loan: Paid amount 5000
+// Home Loan: Paid amount 20000
+// Home Loan: Foreclosure done successfully
+
+// ################### Interface Segregation Principle ###################
+// Database Operations:
+// DB: Opening database connection
+// DB: Creating record in database
+// DB: Deleting record from database
+//
+// File Operations:
+// File: Opening file
+// File: Creating record in file
+// File: Deleting record from file
+
+// ################### Dependency Inversion Principle #####################
+// Calculation of 2 numbers: 8
+
